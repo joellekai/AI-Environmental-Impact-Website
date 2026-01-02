@@ -49,12 +49,14 @@ To run this project locally, follow these steps:
 ---
 
 ## Contributors
+This project was collaboratively developed in a private repository.
+This public repository is a sanitized release for portfolio purposes.
 
-* Aila Jahromi
+* Aila Jahromi ([github.com/ailapj](https://github.com/ailapj))
 
-* Anastasiia Zakala
+* Anastasiia Zakala ([github.com/anastasiia418](https://github.com/anastasiia418))
 
-* Harini Muralidharan
+* Harini Muralidharan ([github.com/harinimurali28](https://github.com/harinimurali28))
 
 * Joelle Kaiser
 
