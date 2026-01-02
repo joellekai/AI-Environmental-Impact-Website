@@ -1,0 +1,390 @@
+*{
+    /* background-color: #f6f6f6; */
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+meta {
+    display: none;
+}
+
+h1 {
+    font-family: 'Anta', cursive;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-family: 'Anta', cursive;
+    font-size: 3rem;
+}
+
+
+h3 {
+    padding-left: 10px;
+    font-family: 'Anta', cursive;
+    text-align:center;
+}
+
+.title{
+    font-family: 'Anta', cursive;
+    text-align: center;
+    animation: animateFont 10s ease-out forwards; 
+    font-size: 5rem;
+    padding: 3rem;
+    transform-origin: top center;
+    min-height: 6rem;
+    color: #8258d0;
+
+}
+@keyframes animateFont {
+    0% {
+        transform: scale(0); 
+        opacity: 0; 
+    }
+    50% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(0.7); 
+    }
+}
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    position: relative;
+    background: #b19cd8;
+    min-height: 4rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anta', cursive;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+    padding: 0 23px;
+    z-index: 1;
+    background-color: #b19cd8;
+}
+a:hover {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Anta', cursive;
+}
+.intro-section {
+    background-color: #b19cd8; /* Light purple background */
+    padding: 40px; /* Adds spacing inside the section */
+    display: flex;
+    justify-content: center; /* Centers content */
+    font-family: "Ubuntu", sans-serif;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white; /* Background for just this section */
+    padding: 20px;
+    border-radius: 15px; /* Soft rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.intro-image {
+    width: 40%; /* Adjust size */
+    max-width: 400px; /* Ensures it doesn't get too big */
+    border-radius: 10px; /* Rounds edges */
+    margin-right: 20px;
+}
+
+.intro-text {
+    flex: 1; /* Allows text to fill the remaining space */
+    font-size: 20px;
+    color: #333; /* Darker text for readability */
+}
+
+.intro-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #6a5acd; /* A deep blue for contrast */
+}
+
+
+.negative {
+    background: #c0cfe6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.negative-carousel {
+    height: 600px;
+    width: 1300px;
+    display: flex;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-x: auto; /* keeps the card from overflowing & enables scrolling */
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    position: relative; /* for arrow placement */
+}
+.negative-carousel::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    background-color: #c0cfe6;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    height: 100%;
+    min-width: 1200px; /* Prevents it from getting too big */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+.card h2 {
+    text-align: center;
+}
+.card p{
+    background-color: #c0cfe6;
+    text-align: left;
+    font-size: 20px; 
+}
+
+.card h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 30px 50px 30px;
+}
+.card img{
+    width: 40%;
+    border-radius: 5%;
+    overflow: hidden;
+
+}
+.card-content {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-between;
+}
+.card-content p {
+    background-color: #c0cfe6;
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+    padding-right: 20px; /* Adds spacing between text and image */
+}
+.card-content img {
+    flex: 1; /* Image takes up the other half */
+    max-width: 50%; /* Ensures the image doesn't get too big */
+    height: auto;
+}
+
+.energy-graph {
+    padding: 1em;
+}
+/* Wrapper to align Y-Axis and Graph */
+.graph-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: #b19cd8; 
+}
+
+/* Y-Axis Labels */
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #b19cd8; /* Light purple background */
+    
+}
+
+.y-label {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #b19cd8; /* Light purple background */
+}
+.y-axis-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust spacing between label and numbers */
+    margin-top: -50px; /* Moves Y-Axis up */
+    position: relative;
+    background-color: #b19cd8; /* Light purple background */
+}
+
+.y-axis-label {
+    font-weight: bold;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    background-color: #b19cd8; /* Light purple background */
+}
+
+
+/* Graph container */
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    height: 200px;
+    border-left: 2px solid black; /* Y-axis line */
+    padding-left: 10px;
+    background-color: #b19cd8; /* Light purple background */
+    
+}
+
+/* Each bar and its group */
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b19cd8; /* Light purple background */
+}
+
+/* Bar styling */
+.bar {
+    width: 80px;
+    height: 0;
+    background-color: #FFEE8C;
+    transition: height 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Buttons (now acting as labels) */
+.bar-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bar-button:hover {
+    background-color: #97AF8F;
+}
+.fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.related-articles {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-left: 35%;
+    background-color: lightblue;
+    padding: 1em;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.related-articles h2 {
+    background-color: lightblue;
+    font-size: 1.8rem;
+    color: #08396a;
+    margin-bottom: 0px;
+    /* display: flex; */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.related-articles ul {
+    background-color: lightblue;
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-articles li {
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.related-articles a {
+    color: #007bff;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.related-articles a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #b19cd8;
+    /* Light purple background */
+    color: white;
+    /* White text for contrast */
+    text-align: center;
+    /* Centers all text */
+    padding: 20px 0;
+    /* Adds spacing */
+    font-family: "Ubuntu", sans-serif;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft top shadow */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 5px 0;
+    /* Adds slight spacing between names */
+    font-size: 1.1rem;
+}
+
+footer h2 {
+    font-size: 2em;
+}
