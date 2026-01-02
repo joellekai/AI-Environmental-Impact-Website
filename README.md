@@ -25,7 +25,7 @@ This website explores the environmental impact of artificial intelligence, inclu
 To run this project locally, follow these steps:  
 
 1. Clone the repository:  
-   git clone https://github.com/harinimurali28/Team-8---Climate-Action.git
+   git clone [https://github.com/harinimurali28/Team-8---Climate-Action.git](https://github.com/joellekai/AI-Environmental-Impact-Website)
 2. Open index.html in a browser.
 
 3. (Optional) Use a local server like Live Server for the best experience.
